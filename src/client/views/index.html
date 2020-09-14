@@ -3,40 +3,46 @@
     <head>
         <meta charset="utf-8">
         <title>Test</title>
-        <link rel="stylesheet" href="/styles/resets.css">
-        <link rel="stylesheet" href="/styles/base.css">
-        <link rel="stylesheet" href="/styles/header.css">
-        <link rel="stylesheet" href="/styles/form.css">
-        <link rel="stylesheet" href="/styles/footer.css">
     </head>
 
     <body>
 
         <header>
             <div class="">
-                Logo
+                >:D 
             </div>
             <div class="">
-                navigation
+                there is nowhere to go...
             </div>
         </header>
 
         <main>
             <section>
-                <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                <form class="" onsubmit="return Main.handleSubmit(event)">
+                    <input id="input" type="text" name="input" value="" placeholder="insert dem feels here">
+                    <input id = "button" type="submit" name="" value="submit" onclick="return Main.handleSubmit(event)" onsubmit="return Main.handleSubmit(event)">
                 </form>
             <section>
 
             <section>
                 <strong>Form Results:</strong>
-                <div id="results"></div>
+                <div id="results">
+                    <div id="yesresults">
+                        <p id="score"></p>
+                        <p id="agreement"></p>
+                        <p id="subjectivity"></p>
+                        <p id="confidence"></p>
+                        <p id="irony"></p>
+                    </div>
+                    <div id="noresults">
+                        <p>No input provided.</p>
+                    </div>
+                </div>
             </section>
         </main>
 
         <footer>
-            <p>This is a footer</p>
+            <p>Copyright Norman L. Pates (NLP)</p>
         </footer>
 
     </body>

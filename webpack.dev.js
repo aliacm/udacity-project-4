@@ -8,6 +8,18 @@ module.exports = {
     mode: 'development',
     devtool: 'source-map',
     stats: 'verbose',
+    optimization: {
+        minimize: false
+    },
+    output: {
+        libraryTarget: "var",
+        library: "Main"
+    },
+    devServer: {
+        proxy: {
+            "/": "http://localhost:8081/"
+        }
+    },
     module: {
         rules: [
             {
